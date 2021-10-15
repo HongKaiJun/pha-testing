@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="358" height="45" viewBox="0 0 358 45">
+  <defs>
+    <clipPath id="clip-employee-portal-logo">
+      <rect width="358" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="employee-portal-logo" clip-path="url(#clip-employee-portal-logo)">
+    <g id="Component_37" data-name="Component 37" transform="translate(1 1)">
+      <g id="Group_525" data-name="Group 525">
+        <text id="EMPLOYEE_PORTAL" data-name="EMPLOYEE PORTAL" transform="translate(47.067 22)" fill="#e50914" font-size="20" font-family="SegoeUI-Semilight, Segoe UI" font-weight="300" letter-spacing="0.01em"><tspan x="0" y="0">EMPLOYEE PORTAL</tspan></text>
+        <g id="Group_523" data-name="Group 523" transform="translate(0 3.603)">
+          <path id="Path_1" data-name="Path 1" d="M91.362,197.278l0-.012h0l0,0h0l-2.408,1.364c0,.012,0,.023,0,.035l-3.2,1.551s2.419,13.635-11.691,16.339a17.71,17.71,0,0,1-6.87-.31c-.476-.132-.95-.28-1.421-.454C56.9,212.505,53.02,201.978,55.5,194.5a17.66,17.66,0,0,1,10.3-11.042c4.757-2.194,12.091-1.562,16.382,1.442l1.037-.5A19.968,19.968,0,0,0,53.341,193.4a19.312,19.312,0,0,0,11.51,25,19.909,19.909,0,0,0,25.48-11.294A18.93,18.93,0,0,0,91.362,197.278Z" transform="translate(-52.065 -180.86)" fill="#e50914"/>
+          <path id="Path_2" data-name="Path 2" d="M92.736,208.083h-7.1s.331-3.162-3.468-3.162-3.883,3.388-2.148,4.217,7.764,1.806,9.829,2.785,3.882,2.409,3.718,6.023-3.3,6.926-11.316,6.926-10.985-3.462-10.9-7.754h6.937s-.165,3.538,4.213,3.538c2.643,0,3.882-1.129,3.882-2.56s-.674-1.979-3.551-2.634a47.049,47.049,0,0,1-7.517-2.033c-1.9-.9-3.551-2.334-3.551-5.8s3.469-6.851,10.573-6.851S92.654,203.19,92.736,208.083Z" transform="translate(-63.461 -193.031)" fill="#e50914"/>
+          <circle id="Ellipse_1" data-name="Ellipse 1" cx="3.565" cy="3.565" r="3.565" transform="translate(31.352 9.212)" fill="#e50914"/>
+        </g>
+        <text id="SOFTWARE_INTERNATIONAL_CORPORATION" data-name="SOFTWARE INTERNATIONAL CORPORATION" transform="translate(49.067 39)" fill="#262626" font-size="10" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" letter-spacing="0.2em"><tspan x="0" y="0">SOFTWARE INTERNATIONAL CORPORATION</tspan></text>
+        <line id="Line_41" data-name="Line 41" x2="308.334" transform="translate(47.538 27.088)" fill="none" stroke="#afafaf" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
