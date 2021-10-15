@@ -14,7 +14,7 @@ class Userlogin extends Component {
             <div className = 'login_box'>
                 <form className ="login">
          
-``                <p>Kaijun here please work pPLEASE!!!!!!!</p>
+``                <p>PLEASE!!!!!!!</p>
                 
                 </form>
 
