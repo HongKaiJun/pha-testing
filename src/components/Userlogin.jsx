@@ -14,7 +14,7 @@ class Userlogin extends Component {
             <div className = 'login_box'>
                 <form className ="login">
          
-                <p>Update this to github please version xx!!!!!</p>
+                <p>Update this to github please version xx~!!!!!</p>
                 
                 </form>
 
