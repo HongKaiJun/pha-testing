@@ -15,7 +15,42 @@
   width:35%;
   padding-top:50px;
   border-radius: 30px;
+  border: 5px solid rgb(207, 200, 200);
   background-color:rgb(250, 250, 250);
 }
 
+.User_Button{
+  background-color: grey; 
+  color: white; 
+  border: none;
+}
 
+.User_Button:hover{
+  background-color: red; 
+  color: white; 
+  border: none;
+}
+
+.System_User_Button{
+  background-color: grey; 
+  color: white; 
+  border: none;
+}
+
+.System_User_Button:hover{
+  background-color: red; 
+  color: white; 
+  border: none;
+}
+
+.Login_Button{
+  background-color:white; 
+  color: red; 
+  border: 2px solid red;
+}
+
+.Login_Button:hover{
+  background-color:red; 
+  color: white; 
+  border: 2px solid red;
+}

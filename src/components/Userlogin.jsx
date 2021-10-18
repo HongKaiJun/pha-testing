@@ -36,17 +36,17 @@ class Userlogin extends Component {
                         {/*<img src= {require("./images/employeelogo.png")} alt="Employee_Logo"></img></div>*/}
                         <img src= {LOGO1} style={{width:"85%", height:"60px",marginBottom:"20px"}} alt="Employee_Logo"></img>
                         <br/>
-                        <button style={{fontSize:"16px",width:"320px", height:"90px"}} className = "btn btn-danger">SYSTEM USER</button>
-                        <button style={{fontSize:"16px",width:"320px", height:"90px"}} className = "btn btn-danger">USER</button>
+                        <button style={{fontSize:"16px",width:"320px", height:"90px"}} className = "User_Button">SYSTEM USER</button>
+                        <button style={{fontSize:"16px",width:"320px", height:"90px"}} className = "System_User_Button">USER</button>
 
-                        <input style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px"}} 
-                        placeholder="  Username" name = "UserName" className="form-control" value ={this.state.userName} onChange={this.changeUserNameHandler}/>
+                        <input style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px",border: "2px solid rgb(207, 200, 200)"}} 
+                        placeholder="  Username" name = "UserName" className="input_username" value ={this.state.userName} onChange={this.changeUserNameHandler}/>
 
-                        <input  style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px"}} 
-                        placeholder="  Password" name = "UserName" className="form-control" value ={this.state.password} onChange={this.changePasswordHandler}/>
+                        <input  style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px",border: "2px solid rgb(207, 200, 200)"}} 
+                        placeholder="  Password" name = "UserName" className="input_password" value ={this.state.password} onChange={this.changePasswordHandler}/>
                         <br/>
-                        <button  style={{boxShadow:"none",fontSize:"16px",marginRight:"400px",borderRadius: "10px", marginTop: "40px",marginBottom: "20px",width:"100px", height:"50px",backgroundColor:"red",color:"white"}} 
-                        onClick = {this.Login} className = "btn btn-danger">LOGIN</button>
+                        <button  style={{fontSize:"16px",marginRight:"400px",borderRadius: "10px", marginTop: "40px",marginBottom: "20px",width:"100px", height:"50px"}} 
+                        onClick = {this.Login} className = "Login_Button">LOGIN</button>
         
  
                 </form>
