@@ -15,5 +15,9 @@
   width:35%;
   padding-top:400px;
   border-radius: 30px;
-  background-color:white;
+  background-color:rgb(250, 250, 250);
+}
+
+.company_logo{
+  background-image: url(./images/employeelogo.png);
 }
