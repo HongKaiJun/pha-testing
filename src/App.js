@@ -1,12 +1,12 @@
-import {BrowserRouter as Router,Route,Switch} from 'react-dom';
-import './App.css';
-import Userlogin from './components/Userlogin';
+import { BrowserRouter as Router, Route, Switch } from 'react-dom'
+import './App.css'
+import Userlogin from './components/Userlogin'
 
 function App() {
   return (
-    <div className="App">
-      <Userlogin/>
-    {/*<Router>
+    <div className='App'>
+      <Userlogin />
+      {/*<Router call>
       {/*If need header put here *
         <div className ="container">
           <Switch>
@@ -16,9 +16,8 @@ function App() {
         </div>
 
     </Router>*/}
-
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
