@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-dom'
 import './App.css'
-import Userlogin from './components/Userlogin'
+import StaffParticularForm from './components/StaffParticularForm'
 
 function App() {
   return (
     <div className='App'>
-      <Userlogin />
+      {/*<Userlogin />*/}
+      <StaffParticularForm/>
       {/*<Router call>
       {/*If need header put here *
         <div className ="container">
