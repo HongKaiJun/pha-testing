@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LOGO1 from "../images/employeelogo.png";
 import '../StaffForm.css';
+import Footer from './Footer';
 
 class StaffParticularForm extends Component {
     constructor(props){
@@ -27,14 +28,21 @@ class StaffParticularForm extends Component {
                 <br/>
                 <label>Passport/NRIC No.</label>
                 <input placeholder="Password No" name="PasswordNo" className="Password_no"></input>
-                <label>Expired date</label>
                 <input placeholder="Expired Date" name="ExpiredDate" className="Expired_date"></input>
+                <br/>
                 <label>Passport/NRIC Photocopy:</label>
                 {/*need to add image and onclick to upload stuff*/}
-                <input placeholder="Passport Photocopy" name="PasswordPhotocopy" className="Password_photocopy"></input>
+                <div className = "passport_file">
+                    <input type = "file" className= "passport_photocopy" id="inputFile"></input>
+                </div> 
                 <br/>
                 <label>Marital Status:</label>
-                <input placeholder="Marital Status" name="MaritalStatus" className="Marital_status"></input>
+                <select className="custom-select" id="MaritalStatus">
+                    <option selected>Single</option>
+                    <option value>Married</option>
+                    <option value>Window</option>
+                    <option value>Divorcee</option>
+                </select>
                 <label> Do you have children? </label>
                 <input className ="GotChild" type="checkbox"></input>
                 <label> Yes </label>
@@ -43,9 +51,23 @@ class StaffParticularForm extends Component {
                 <br/>
                 <label>Mobile No:</label>
                 {/*need add the dropdown box for different country number */}
+                <select className="custom-select" id="PhoneNum1">
+                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+852 Hong Kong)</option>
+                    <option value>(+65 Singapore)</option>
+                    <option value>(+86 China)</option>
+                    <option value>(+886 Taiwan)</option>
+                </select>
                 <input placeholder="Mobile No" name="MobileNo" className="Mobile_no"></input>
                 <label>House No:</label>
                 {/*need add the dropdown box for different country number */}
+                <select className="custom-select" id="PhoneNum2">
+                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+852 Hong Kong)</option>
+                    <option value>(+65 Singapore)</option>
+                    <option value>(+86 China)</option>
+                    <option value>(+886 Taiwan)</option>
+                </select>
                 <input placeholder="House No" name="HouseNo" className="House_no"></input>
                 <label>Email Address (Personal):</label>
                 <input placeholder="Email Address" name="EmailAddress" className="Email_address"></input>
@@ -56,6 +78,7 @@ class StaffParticularForm extends Component {
                 <label>Address Line 1:</label>
                 <input placeholder="-" name="PAddressLine1" className="P_Address_line1"></input>
                 <label>City:</label>
+                
                 <input placeholder="Please select" name="PCity" className="P_City"></input>
                 <label>State</label>
                 <input placeholder="Please select" name="PState" className="P_State"></input>
@@ -94,6 +117,13 @@ class StaffParticularForm extends Component {
                 <input placeholder="Husband" name="SpounseRelationship" className="Spounse_relationship"></input>
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
+                <select className="custom-select" id="PhoneNum3">
+                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+852 Hong Kong)</option>
+                    <option value>(+65 Singapore)</option>
+                    <option value>(+86 China)</option>
+                    <option value>(+886 Taiwan)</option>
+                </select>
                 <input placeholder="Spounse's ContactNum" name="SpounseContactNum" className="Spounse_contactnum"></input>
                 <br/>
                 <label>2. Name:</label>
@@ -102,6 +132,13 @@ class StaffParticularForm extends Component {
                 <input placeholder="Father" name="ParentRelationship" className="Parent_relationship"></input>
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
+                <select className="custom-select" id="PhoneNum4">
+                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+852 Hong Kong)</option>
+                    <option value>(+65 Singapore)</option>
+                    <option value>(+86 China)</option>
+                    <option value>(+886 Taiwan)</option>
+                </select>
                 <input placeholder="Parent's ContactNum" name="ParentContactNum" className="Parent_contactnum"></input>
                 </div>
                 
@@ -113,18 +150,23 @@ class StaffParticularForm extends Component {
                 <input placeholder="Husband" name="SpounseRelationship2" className="Spounse_relationship2"></input>
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
+                <select className="custom-select" id="PhoneNum5">
+                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+852 Hong Kong)</option>
+                    <option value>(+65 Singapore)</option>
+                    <option value>(+86 China)</option>
+                    <option value>(+886 Taiwan)</option>
+                </select>
                 <input placeholder="Spounse's ContactNum" name="SpounseContactNum2" className="Spounse_contactnum2"></input>
                 <br/>
                 <label>Marriage Certificate:</label>
                 <input placeholder="Marriage Cert" name="MarriageCert" className="Marriage_Cert"></input>
                 <br/>
-               
-                {/*popup te table for child details  */}
                 </div>
 
                 <div className = "Education_Background">
                 <h3 style={{textAlign:"left", marginLeft:"50px",color:"red"}} >Education Background (Additional Certificate Professional / Training Certifications</h3>
-                    <table className="Education_Table">
+                    <table className="table table-dark table-bordered">
                     <thead>
                         <tr>
                             <th>NO.</th>
@@ -132,10 +174,40 @@ class StaffParticularForm extends Component {
                             <th>YEAR OBTAINED (YYYY)</th>
                             <th>CERTIFICATION</th>
                             <th>CERTIFICATION COPY</th>
-                            <th>ACTION</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <td></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                    </tbody>
                 </table>
+                {/*popup te table for child details  */}
+                <div className ="Child_Details">
+                <h3 style={{textAlign:"left", marginLeft:"50px",color:"red"}} >Child Details</h3>
+                <table className="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th>NO.</th>
+                            <th>CHILDREN'S NAME</th>
+                            <th>BIRTH DATE (DD/MM/YYYY)</th>
+                            <th>BIRTH CERTIFICATE PHOTOCOPY</th>
+                            <th>NATIONALITY</th>
+                            <th>OCUPATION/SCHOOL/INSTITUTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td><input placeholder="" name="" className=""></input></td>
+                        <td></td>
+                    </tbody>
+                </table>
+                </div>
                 </div>
 
                 <div className ="PDPA">
@@ -150,7 +222,7 @@ class StaffParticularForm extends Component {
                 <p/>
                 <button  style={{textAlign:"right", marginRight:"50px"}} className = "Cancel_Button">Cancel</button>
                 <button  style={{textAlign:"right"}} className = "Submit_Button">Submit</button>
-
+                <Footer/>
             </div>
         )
     }
