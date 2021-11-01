@@ -11,6 +11,7 @@ class StaffParticularForm extends Component {
 
         }
     }
+
     render() {
         return (
             <div className ="Staff_Form">
@@ -38,7 +39,7 @@ class StaffParticularForm extends Component {
                 <br/>
                 <label>Marital Status:</label>
                 <select className="custom-select" id="MaritalStatus">
-                    <option selected>Single</option>
+                    <option value>Single</option>
                     <option value>Married</option>
                     <option value>Window</option>
                     <option value>Divorcee</option>
@@ -52,7 +53,7 @@ class StaffParticularForm extends Component {
                 <label>Mobile No:</label>
                 {/*need add the dropdown box for different country number */}
                 <select className="custom-select" id="PhoneNum1">
-                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+60 Malaysia)</option>
                     <option value>(+852 Hong Kong)</option>
                     <option value>(+65 Singapore)</option>
                     <option value>(+86 China)</option>
@@ -62,7 +63,7 @@ class StaffParticularForm extends Component {
                 <label>House No:</label>
                 {/*need add the dropdown box for different country number */}
                 <select className="custom-select" id="PhoneNum2">
-                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+60 Malaysia)</option>
                     <option value>(+852 Hong Kong)</option>
                     <option value>(+65 Singapore)</option>
                     <option value>(+86 China)</option>
@@ -118,7 +119,7 @@ class StaffParticularForm extends Component {
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
                 <select className="custom-select" id="PhoneNum3">
-                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+60 Malaysia)</option>
                     <option value>(+852 Hong Kong)</option>
                     <option value>(+65 Singapore)</option>
                     <option value>(+86 China)</option>
@@ -133,7 +134,7 @@ class StaffParticularForm extends Component {
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
                 <select className="custom-select" id="PhoneNum4">
-                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+60 Malaysia)</option>
                     <option value>(+852 Hong Kong)</option>
                     <option value>(+65 Singapore)</option>
                     <option value>(+86 China)</option>
@@ -151,7 +152,7 @@ class StaffParticularForm extends Component {
                 <label>Contact No:</label>
                 {/*Add the dropdown box for the contact number. Different country */}
                 <select className="custom-select" id="PhoneNum5">
-                    <option selected>(+60 Malaysia)</option>
+                    <option value>(+60 Malaysia)</option>
                     <option value>(+852 Hong Kong)</option>
                     <option value>(+65 Singapore)</option>
                     <option value>(+86 China)</option>
@@ -177,11 +178,12 @@ class StaffParticularForm extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <td></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
+                        <tr>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                        </tr>
                     </tbody>
                 </table>
                 {/*popup te table for child details  */}
@@ -199,12 +201,12 @@ class StaffParticularForm extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <td></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td><input placeholder="" name="" className=""></input></td>
-                        <td></td>
+                     <tr>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                            <td><input placeholder="" name="" className=""></input></td>
+                        </tr>
                     </tbody>
                 </table>
                 </div>
