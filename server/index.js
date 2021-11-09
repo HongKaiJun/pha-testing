@@ -19,9 +19,24 @@ app.use(bodyParser.urlencoded({ extended: true }))
 //req==request(getting request from user)
 //res==respond(showing user)
 
-//for testing GET from web
-app.get('/', (req, res) => {
-  res.send('Testing server conn')
+//for getting user information from database
+app.get('/api/get', (req, res) => {
+  const sqlSelect = 'SELECT * FROM pha_test'
+  db.query(sqlSelect, (err, result) => {
+    console.log(result)
+    res.send(result)
+  })
+})
+
+app.post('api/insert', (req, res) => {
+  //declare var
+
+  //sql query
+  const sqlInsert = 'INSERT INTO pha_test () VAlUES(?,?)'
+
+  db.query(sqlInsert, [], (err, result) => {
+    console.log(result)
+  })
 })
 
 // to point the mysql server
