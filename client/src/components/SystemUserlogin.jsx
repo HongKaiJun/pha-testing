@@ -32,13 +32,13 @@ class SystemUserlogin extends Component {
     render() {
         return (
             <div>
-                <input style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px",border: "2px solid rgb(207, 200, 200)" }} 
+                <input style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"80%", height:"50px",border: "2px solid rgb(207, 200, 200)" }} 
                         placeholder="  Username" name = "UserName" className="input_username" value ={this.state.userName} onChange={this.changeUserNameHandler}/>
 
-                        <input  style={{fontSize:"16px",borderRadius: "10px", marginTop: "20px",width:"500px", height:"50px",border: "2px solid rgb(207, 200, 200)"}} 
+                        <input  style={{fontSize:"16px", borderRadius: "10px", marginTop: "20px",width:"80%", height:"50px",border: "2px solid rgb(207, 200, 200)"}} 
                         placeholder="  Password" name = "UserName" className="input_password" value ={this.state.password} onChange={this.changePasswordHandler}/>
                         <br/>
-                        <button  style={{fontSize:"16px",marginRight:"400px",borderRadius: "10px", marginTop: "40px",marginBottom: "20px",width:"100px", height:"50px"}} 
+                        <button  style={{fontSize:"16px", borderRadius: "10px", marginTop: "40px",marginBottom: "20px",width:"100px", height:"50px"}} 
                         onClick = {this.Login} className = "Login_Button">LOGIN</button>
             </div>
         )

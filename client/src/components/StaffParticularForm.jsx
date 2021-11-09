@@ -186,6 +186,7 @@ class StaffParticularForm extends Component {
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 {/*popup te table for child details  */}
                 <div className ="Child_Details">
                 <h3 style={{textAlign:"left", marginLeft:"50px",color:"red"}} >Child Details</h3>
@@ -210,7 +211,7 @@ class StaffParticularForm extends Component {
                     </tbody>
                 </table>
                 </div>
-                </div>
+
 
                 <div className ="PDPA">
                 <h3 style={{textAlign:"left", marginLeft:"50px",color:"red"}} >PDPA Consent Clause</h3>   
