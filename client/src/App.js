@@ -13,7 +13,8 @@ function App() {
 
         <div className ="container">
           <Switch>
-            <Route  path ="/" exact component ={Userlogin}></Route>
+            {/*<Route  path ="/" exact component ={Userlogin}></Route>*/}
+            <Route  path ="/" exact component = {StaffParticularForm}></Route>
             <Route  path ="/azure"exact component ={Azurelogin}></Route>
             <Route  path ="/azure/staff-form-display"exact component ={StaffParticularForm}></Route>
           </Switch>
