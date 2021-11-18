@@ -1,0 +1,51 @@
+.Staff_Form{
+  min-width: 100%;
+  min-height: 100%;
+  background-size:cover;
+  background-color:white;
+  background-position:center;
+}
+
+.Staff_Form_Title{
+    margin-top: 60px;
+    border-top: 4px solid rgb(150, 149, 149);
+    background-color:rgb(238, 238, 238);
+    padding-bottom: 8px;
+}
+
+.Personal_Details{
+    border-bottom: 1.5px solid rgb(150, 149, 149);
+    padding-bottom: 20px;
+
+}
+
+.Emergency_Contact{
+    border-bottom: 1.5px solid rgb(150, 149, 149);
+    padding-bottom: 20px;
+
+}
+
+.Spouse_Particular{
+    border-bottom: 1.5px solid rgb(150, 149, 149);
+    padding-bottom: 20px;
+}
+
+.Education_Background{
+    border-bottom: 1.5px solid rgb(150, 149, 149);
+    padding-bottom: 20px;
+}
+
+.Cancel_Button{
+    background-color:white; 
+    color: red; 
+    border: 2px solid red;
+}
+
+.Submit_Button{
+    background-color:red; 
+    color: white; 
+    border: 2px solid red;
+}
+
+
+

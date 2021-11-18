@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   background-image: url(./images/login-si-pha-bg.jpg);
-  position: fixed;
   min-width: 100%;
   min-height: 100%;
   background-size:cover;
@@ -10,9 +9,8 @@
 
 .login_box{
   display: inline-block;
-  margin-top: 200px;
+  margin-top: 10%;
   height: 100%;
-  width:35%;
   padding-top:50px;
   border-radius: 30px;
   border: 5px solid rgb(207, 200, 200);
@@ -25,7 +23,7 @@
   border: none;
 }
 
-.User_Button:hover{
+.User_Button:focus{
   background-color: red; 
   color: white; 
   border: none;
@@ -37,7 +35,7 @@
   border: none;
 }
 
-.System_User_Button:hover{
+.System_User_Button:focus{
   background-color: red; 
   color: white; 
   border: none;
@@ -53,4 +51,17 @@
   background-color:red; 
   color: white; 
   border: 2px solid red;
+}
+
+.Footer{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width:100%;
+  height:30px;
+  background-position: 0%;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
 }
