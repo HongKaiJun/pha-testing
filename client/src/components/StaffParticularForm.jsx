@@ -309,7 +309,7 @@ class StaffParticularForm extends Component {
                                     <td><input placeholder="" name="" className=""></input></td>
                                     <td><input placeholder="" name="" className=""></input></td>
                                     <td><input placeholder="" name="" className=""></input></td>
-                                    <td><input placeholder="" name="" className=""></input></td>
+                                    <td><input type = "file" className= "passport_photocopy" id="inputFile"></input></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -337,6 +337,7 @@ class StaffParticularForm extends Component {
                                     <td>1</td>
                                     <td><input placeholder="" name="" className=""></input></td>
                                     <td><input placeholder="" name="" className=""></input></td>
+                                    <td><input type = "file" className= "passport_photocopy" id="inputFile"></input></td>
                                     <td><input placeholder="" name="" className=""></input></td>
                                     <td><input placeholder="" name="" className=""></input></td>
                                 </tr>
