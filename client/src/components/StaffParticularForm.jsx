@@ -2,18 +2,34 @@ import React, { Component } from 'react'
 import LOGO1 from "../images/employeelogo.png";
 import '../StaffForm.css';
 import Footer from './Footer';
-
+import axios from 'axios';
+import EmployeeService from '../service/EmployeeService';
 
 class StaffParticularForm extends Component {
     constructor(props){
         super(props)
 
         this.state= {
-
+            employee: [],
+            EmployeeEmail:'kaijun.hong@sicmsb.com'
         }
     }
 
+    componentDidMount() {
+        EmployeeService.getEmployeesByEmail(this.state.EmployeeEmail)
+            .then(res => {
+                this.setState({ employee : res.data });
+            })
+            .catch(function(error) {
+                console.log(error);
+            })
+    }
+
+
     render() {
+        console.log("Employee =>" + JSON.stringify(this.state.employee))
+        const {employee} = this.state;
+
         return (
             <form>
                 <img src= {LOGO1} style={{position:"absolute",top:"8px",left:"20px"}} alt="Employee_Logo"></img>
@@ -21,16 +37,17 @@ class StaffParticularForm extends Component {
                     <h2 style={{textAlign:"left", marginLeft:"50px"}} > Staff Particular Form   (Year 2020/2021)</h2>
                 </div>
                 
-                <div class="card">
+                {employee.map((employee,e) =>
+                    <div class="card">
                     <div class="card-body">
                         <h4 style={{textAlign:"left",color:"red"}} >Personal Details </h4>
                         <br />
                         <div class="row">
                             <div class="col-4" style={{textAlign:"left"}}>
-                                Name: Alex Lim
+                                Name: {employee.empName}
                             </div>
                             <div class="col-4" style={{textAlign:"left"}}>
-                                EmployeeID: B1897
+                                EmployeeID: {employee.lanId}
                             </div>
                         </div>
                         <br/>
@@ -38,7 +55,7 @@ class StaffParticularForm extends Component {
                             <div class="col" style={{textAlign:"left"}}>
                                 <label>Passport No:</label>
                                 <br/> 
-                                <input placeholder="Passport No" name="PasswordNo" className="Password_no form-control"></input>
+                                <input placeholder="Passport No" name="PasswordNo" className="Password_no form-control" defaultValue={employee.passportNo}></input>
                                 <input placeholder="Expired Date" name="ExpiredDate" className="Expired_date form-control"></input>
                             </div>
                             <div class="col" style={{textAlign:"left"}}>
@@ -184,6 +201,8 @@ class StaffParticularForm extends Component {
                         </div>
                     </div>
                 </div>
+                )}
+                
 
                 <div class="card">
                     <div class="card-body">
