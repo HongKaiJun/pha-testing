@@ -326,7 +326,7 @@ class StaffParticularForm extends Component {
                                         <tbody>
                                             {employee.educationDetailsResponse.map((education,edu) =>
                                                 <tr>
-                                                    <td>{education.empEdu}</td>
+                                                    <td></td>
                                                     <td><input placeholder="" name="" className="" defaultValue ={education.collegeName}></input></td>
                                                     <td><input placeholder="" name="" className="" defaultValue ={education.yearObtain}></input></td>
                                                     <td><input placeholder="" name="" className="" defaultValue ={education.certificate}></input></td>
@@ -361,7 +361,7 @@ class StaffParticularForm extends Component {
                                         <tbody>
                                             {employee.childrenResponse.map((child,c) =>
                                                 <tr>
-                                                    <td>{child.childId}</td>
+                                                    <td></td>
                                                     <td><input placeholder="" name="" className="" defaultValue ={child.childName}></input></td>
                                                     <td><input placeholder="" name="" className="" defaultValue ={child.childDate}></input></td>
                                                     <td><input type = "file" className= "passport_photocopy" id="inputFile"></input></td>
